@@ -8,6 +8,7 @@ import { Screenshots } from './components/Screenshots'
 import { Installation } from './components/Installation'
 import { FAQ } from './components/FAQ'
 import { TechStack } from './components/TechStack'
+import { FriendLinks } from './components/FriendLinks'
 import { Footer } from './components/Footer'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Installation />
       <FAQ />
       <TechStack />
+      <FriendLinks />
       <Footer />
     </div>
   )
