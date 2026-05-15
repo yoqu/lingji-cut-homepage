@@ -9,6 +9,7 @@ import { Installation } from './components/Installation'
 import { FAQ } from './components/FAQ'
 import { TechStack } from './components/TechStack'
 import { FriendLinks } from './components/FriendLinks'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <FAQ />
       <TechStack />
       <FriendLinks />
+      <Contact />
       <Footer />
     </div>
   )
