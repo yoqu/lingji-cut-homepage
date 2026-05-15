@@ -43,7 +43,7 @@ export function Contact() {
               <span className="text-sm font-medium">微信：yoqu2020</span>
             </div>
             <img
-              src="/wechat-qr.png"
+              src={`${import.meta.env.BASE_URL}wechat-qr.png`}
               alt="微信二维码"
               className="w-36 h-36 rounded-lg"
             />
