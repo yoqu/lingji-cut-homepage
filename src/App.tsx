@@ -1,6 +1,7 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { Features } from './components/Features'
+import { PromoVideo } from './components/PromoVideo'
 import { DemoVideo } from './components/DemoVideo'
 import { QuickStart } from './components/QuickStart'
 import { Screenshots } from './components/Screenshots'
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <PromoVideo />
       <DemoVideo />
       <QuickStart />
       <Screenshots />
