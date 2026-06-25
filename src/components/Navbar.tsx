@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
+  { label: '创作全流程', href: '#workflow' },
   { label: '功能特性', href: '#features' },
   { label: '快速上手', href: '#quickstart' },
   { label: '产品截图', href: '#screenshots' },

@@ -26,7 +26,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            本地优先的桌面 AI 视频创作工具。从写稿、素材管理、AI 审稿、语音合成、字幕处理到时间线剪辑和视频导出，一站式完成内容创作。
+            本地优先的桌面 AI 视频创作工具。从选题采集、写稿审稿、语音合成、字幕处理、AI 信息卡，到时间线剪辑、Remotion 导出和多平台发布——一条流水线一站式完成内容创作。
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">

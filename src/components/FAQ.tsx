@@ -41,11 +41,34 @@ sudo spctl --master-enable
 
 **图片生成**：即梦（Jimeng）、OpenAI DALL-E、MiniMax、豆包、Google Imagen、通义万相（Wanx）、以及任何兼容 API 的自定义 Provider。
 
-**语音合成（TTS）**：MiniMax TTS，支持多种音色、语速、音调和情绪配置。
+**语音合成（TTS）**：多 Provider 音色体系，支持 MiniMax T2A 与 Xiaomi MiMo（含克隆音色），可配置音色、语速、音调和情绪。
 
-**AI Agent**：Claude ACP Runtime，支持 Claude Code / Codex / Gemini 通过 MCP 协议操作编辑器。
+**AI Agent**：内置 Pi agent 开箱即用（零安装、复用应用 LLM 配置）；同时提供 lingji-editor MCP Server，支持 Claude Code / Codex / Gemini 通过 MCP 协议或 file-first 直接操作编辑器。
 
 所有 AI 配置都在应用内「设置」页面完成，无需修改代码或环境变量。`,
+  },
+  {
+    q: '灵机采风 Chrome 扩展是做什么的？怎么用？',
+    a: `灵机采风是配套的 Chrome 扩展，用来监听抖音博主、采集公开视频、本地转录字幕，并把成稿素材一键推送到桌面端的「待创作箱」做二次创作。
+
+**安装**：进入仓库 \`extensions/sonar/\` 目录，执行 \`npm install\` 与 \`npm run build\`，再在 Chrome 开发者模式「加载已解压的扩展程序」选择 \`dist/\` 目录即可。
+
+**联动**：启动灵机剪影桌面端后，在扩展设置页点「一键连接灵机剪影」自动配置本机联动桥（默认 http://127.0.0.1:19820）。转录完成会自动推送到「待创作箱」，在桌面端点「生成初稿」即可进入完整创作链路。
+
+扩展复用浏览器中抖音的正常登录态，数据保存在本地，不需要导出 Cookie 或 Token。`,
+  },
+  {
+    q: '支持发布到哪些平台？',
+    a: `视频导出后，可在「发布」选项卡完成多平台发布：
+
+**支持平台**：B站、视频号、抖音、快手、小红书。
+
+**发布工作台能力**：
+- 多画幅封面工作台（16:9 / 4:3 / 3:4），按平台需求各选一张
+- 发布元数据生成（标题 / 简介 / 标签）
+- B站分区 AI 智能推荐
+
+发布账号登录态在「设置 → 发布账号」管理。`,
   },
   {
     q: '项目数据存储在哪里？',

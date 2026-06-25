@@ -10,7 +10,8 @@ const techs = [
   { name: 'Framer Motion', desc: '动画引擎' },
   { name: 'TailwindCSS 4', desc: '样式系统' },
   { name: 'MCP SDK', desc: 'AI 工具协议' },
-  { name: 'Claude ACP', desc: 'Agent 运行时' },
+  { name: '内置 Pi Agent', desc: 'Agent 运行时' },
+  { name: 'CRXJS + Vite', desc: '灵机采风扩展' },
 ]
 
 export function TechStack() {

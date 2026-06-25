@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+import { Workflow } from './components/Workflow'
 import { Features } from './components/Features'
 import { PromoVideo } from './components/PromoVideo'
 import { DemoVideo } from './components/DemoVideo'
@@ -17,6 +18,7 @@ function App() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <Hero />
+      <Workflow />
       <Features />
       <PromoVideo />
       <DemoVideo />

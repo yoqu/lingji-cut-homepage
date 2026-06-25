@@ -1,23 +1,28 @@
 import { motion } from 'framer-motion'
 import {
-  PenLine, Film, Mic, Layers, Brain, Bot, MonitorPlay, HardDrive,
+  Radar, PenLine, Mic, Sparkles, Layers, Brain, Bot, Send, Terminal, MonitorPlay, HardDrive, Film,
 } from 'lucide-react'
 
 const features = [
+  {
+    icon: Radar,
+    title: '灵机采风采集',
+    desc: '配套 Chrome 扩展监听抖音博主、采集公开视频、本地转录，并经联动桥推送到「待创作箱」做二创。',
+  },
   {
     icon: PenLine,
     title: 'AI 写稿工作台',
     desc: '管理原始素材与口播稿，支持多文件标签、搜索替换、版本历史、AI 生成与 AI 审稿批注。',
   },
   {
-    icon: Film,
-    title: '一站式视频工作台',
-    desc: '在同一界面管理素材、预览、Inspector、时间线和导出配置，所见即所得。',
-  },
-  {
     icon: Mic,
     title: '自动口播流程',
-    desc: '从文稿触发 TTS 语音合成、字幕解析、内容分析、封面候选和视觉卡片生成。',
+    desc: '从文稿触发 TTS 语音合成、字幕解析、内容分析、封面候选和视觉卡片生成，增量流式呈现。',
+  },
+  {
+    icon: Sparkles,
+    title: 'Motion Card 数据动画',
+    desc: 'AI 生成自由 Remotion TSX 卡片（文字 / 数字 / 表格 / 图表），出卡前先生成逐拍动画指导。',
   },
   {
     icon: Layers,
@@ -27,12 +32,27 @@ const features = [
   {
     icon: Brain,
     title: '多 Provider AI 配置',
-    desc: '支持 OpenAI 兼容模型、Gemini、LM Studio、多种图片生成 Provider 和 MiniMax TTS。',
+    desc: '支持 OpenAI 兼容、Gemini、LM Studio 等 LLM，多种图片 / 视频 Provider 与多音色 TTS。',
   },
   {
     icon: Bot,
-    title: 'Agent / MCP 集成',
-    desc: '内置 Claude ACP Runtime，提供 MCP 工具给 Claude Code / Codex / Gemini 操作编辑器。',
+    title: '内置 Pi Agent',
+    desc: '开箱即用的对话 agent，零安装、复用应用 LLM 配置，直接改稿改视频，编辑器实时热重载。',
+  },
+  {
+    icon: Film,
+    title: '外部 Agent / MCP',
+    desc: 'lingji-editor MCP Server 提供工具给 Claude Code / Codex / Gemini，配合 file-first 契约编辑项目。',
+  },
+  {
+    icon: Send,
+    title: '多平台一键发布',
+    desc: '多画幅封面工作台、发布元数据与 B站分区 AI 推荐，发布到 B站 / 视频号 / 抖音 / 快手 / 小红书。',
+  },
+  {
+    icon: Terminal,
+    title: '命令行与自动化',
+    desc: '无头 lingji CLI 在终端里驱动音频、字幕分析、卡片、封面、导出等完整流水线。',
   },
   {
     icon: MonitorPlay,
