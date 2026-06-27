@@ -3,15 +3,17 @@ import { useState } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const screenshots = [
-  { src: 'screenshots/welcome.png', title: '欢迎页', desc: '项目管理、多种导入方式' },
-  { src: 'screenshots/welcome-document-import.png', title: '文稿导入', desc: '支持粘贴或拖拽 .md / .txt 文件' },
-  { src: 'screenshots/welcome-douyin-import.png', title: '抖音视频导入', desc: '通过分享链接一键导入抖音视频' },
-  { src: 'screenshots/script-workbench.png', title: '写稿工作台', desc: 'AI 写稿、审稿、批注、版本历史' },
-  { src: 'screenshots/video-workbench.png', title: '视频工作台', desc: '素材面板、预览、时间线、Inspector' },
-  { src: 'screenshots/ai-config.png', title: 'AI 基础配置', desc: '多 LLM Provider 与图片生成 Provider' },
-  { src: 'screenshots/prompt-config.png', title: '提示词配置', desc: '管理内置 / 全局 / 项目级提示词' },
-  { src: 'screenshots/ai-agent.png', title: 'AI Agent', desc: 'Claude ACP Runtime 配置与权限策略' },
-  { src: 'screenshots/config-backup.png', title: '配置备份', desc: '导出与导入全局设置备份' },
+  { src: 'screenshots/sonar-workbench.png', title: '灵机采风工作台', desc: '监听博主、同步动态、管理视频库与工作流' },
+  { src: 'screenshots/sonar-sidepanel.png', title: '采风侧边栏', desc: '在 Chrome 里粘贴链接快速入库' },
+  { src: 'screenshots/script-workbench.png', title: '写稿工作台', desc: '从 original.md 到 script.md 的口播创作流程' },
+  { src: 'screenshots/script-agent.png', title: 'Pi Agent 协作', desc: 'Agent 直接读写稿件并返回可追踪改动' },
+  { src: 'screenshots/video-editor-agent.png', title: '视频编辑器 + Agent', desc: '编辑器、时间线、素材和 AI 对话并排协作' },
+  { src: 'screenshots/prompt-config.png', title: '提示词与模板', desc: '发布文案、动画指导、卡片生成、口播模板集中配置' },
+  { src: 'screenshots/agent-skills.png', title: 'Agent 与 Skills', desc: 'Pi、审批模式、发布技能和图像生成技能统一管理' },
+  { src: 'screenshots/ai-config.png', title: 'AI 基础配置', desc: 'Provider、默认模型和 Claude Code ACP 本机运行时' },
+  { src: 'screenshots/publish-workbench.png', title: '发布工作台', desc: '多比例封面、标题简介标签和平台元数据' },
+  { src: 'screenshots/publish-platforms.png', title: '一键发布', desc: '抖音、快手、B 站、视频号账号统一勾选发布' },
+  { src: 'screenshots/publish-accounts.png', title: '发布账号', desc: '账号登录状态、校验、重登和有头浏览器兜底' },
 ]
 
 export function Screenshots() {
@@ -26,9 +28,9 @@ export function Screenshots() {
     <section id="screenshots" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">产品截图</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">最新产品截图</h2>
           <p className="text-muted-foreground text-lg">
-            macOS 原生体验的专业创作界面
+            重新采集自当前版本，覆盖采风插件、写稿、Agent、视频编辑与发布。
           </p>
         </div>
 
@@ -43,7 +45,7 @@ export function Screenshots() {
               className="group cursor-pointer"
               onClick={() => openLightbox(i)}
             >
-              <div className="rounded-xl overflow-hidden border border-border/50 group-hover:border-accent/30 transition-all">
+              <div className="rounded-xl overflow-hidden border border-border/50 group-hover:border-accent/30 transition-all bg-card">
                 {/* Window chrome */}
                 <div className="bg-[#1c1c1e] px-3 py-2 flex items-center gap-1.5 border-b border-border/30">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
@@ -54,7 +56,7 @@ export function Screenshots() {
                 <img
                   src={`${import.meta.env.BASE_URL}${shot.src}`}
                   alt={shot.title}
-                  className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full aspect-video object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                 />
               </div>

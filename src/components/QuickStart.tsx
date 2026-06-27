@@ -1,41 +1,41 @@
 import { motion } from 'framer-motion'
-import { FileText, Mic, Film, Download } from 'lucide-react'
+import { FileText, Film, Globe, Send } from 'lucide-react'
 
 const steps = [
   {
-    icon: FileText,
+    icon: Globe,
     step: '01',
-    title: '导入素材',
-    desc: '在欢迎页新建项目，导入原始文稿、音频、视频，或通过抖音链接导入。支持粘贴文本和拖拽文件。',
+    title: '采集选题',
+    desc: '用灵机采风监听博主、采集公开视频，本地转录并生成爆款拆解，确认后推送到灵机剪影待创作箱。',
   },
   {
-    icon: Mic,
+    icon: FileText,
     step: '02',
-    title: 'AI 写稿与审稿',
-    desc: '在写稿工作台编辑口播稿，使用 AI 生成、审稿批注、版本管理。稿件确认后触发 TTS 语音合成。',
+    title: '生成口播',
+    desc: '在写稿工作台从原始素材生成口播稿，按模板改写、AI 审稿、版本回溯，也可以让 Pi Agent 直接改稿。',
   },
   {
     icon: Film,
     step: '03',
-    title: '时间线编辑',
-    desc: 'AI 自动分析内容、生成字幕、信息卡和封面。在视频工作台精调时间线、素材和动画效果。',
+    title: '做成视频',
+    desc: '自动生成 TTS、字幕、信息卡、逐拍动画指导和多比例封面，在视频编辑器里精调时间线和素材。',
   },
   {
-    icon: Download,
+    icon: Send,
     step: '04',
-    title: '导出视频',
-    desc: '配置分辨率和质量参数，通过 Remotion 渲染引擎导出 H.264 MP4。全程本地处理，数据安全。',
+    title: '一键发布',
+    desc: '导出后进入发布工作台，AI 生成标题、简介、标签和 B 站分区，勾选账号后发布到多个平台。',
   },
 ]
 
 export function QuickStart() {
   return (
-    <section id="quickstart" className="py-24 px-6 bg-gradient-to-b from-transparent via-accent/[0.02] to-transparent">
+    <section id="quickstart" className="overflow-hidden py-24 px-6 bg-gradient-to-b from-transparent via-accent/[0.02] to-transparent">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">快速上手</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">一条线跑完内容生产</h2>
           <p className="text-muted-foreground text-lg">
-            四步完成从素材到成片的完整流程
+            从刷到选题，到做出成片，再到多平台发布。
           </p>
         </div>
 

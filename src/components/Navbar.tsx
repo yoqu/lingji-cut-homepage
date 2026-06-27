@@ -4,10 +4,11 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { label: '创作全流程', href: '#workflow' },
   { label: '功能特性', href: '#features' },
+  { label: '宣传动画', href: '#promo' },
   { label: '快速上手', href: '#quickstart' },
   { label: '产品截图', href: '#screenshots' },
+  { label: '更新日志', href: '#changelog' },
   { label: '安装教程', href: '#installation' },
-  { label: '常见问题', href: '#faq' },
 ]
 
 export function Navbar() {
@@ -23,7 +24,7 @@ export function Navbar() {
           </svg>
           灵机剪影
         </a>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map(link => (
             <a key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {link.label}

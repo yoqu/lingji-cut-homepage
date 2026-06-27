@@ -6,6 +6,7 @@ import { PromoVideo } from './components/PromoVideo'
 import { DemoVideo } from './components/DemoVideo'
 import { QuickStart } from './components/QuickStart'
 import { Screenshots } from './components/Screenshots'
+import { Changelog } from './components/Changelog'
 import { Installation } from './components/Installation'
 import { FAQ } from './components/FAQ'
 import { TechStack } from './components/TechStack'
@@ -24,6 +25,7 @@ function App() {
       <DemoVideo />
       <QuickStart />
       <Screenshots />
+      <Changelog />
       <Installation />
       <FAQ />
       <TechStack />

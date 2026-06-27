@@ -1,18 +1,18 @@
 import { motion } from 'framer-motion'
 import {
-  Radar, PenLine, Mic, Sparkles, Layers, Brain, Bot, Send, Terminal, MonitorPlay, HardDrive, Film,
+  Radar, PenLine, Mic, Sparkles, Layers, Brain, Bot, Send, Terminal, MonitorPlay, HardDrive, Film, History,
 } from 'lucide-react'
 
 const features = [
   {
     icon: Radar,
-    title: '灵机采风采集',
-    desc: '配套 Chrome 扩展监听抖音博主、采集公开视频、本地转录，并经联动桥推送到「待创作箱」做二创。',
+    title: '灵机采风 Chrome 扩展',
+    desc: '监听抖音博主、主页滚动采集、无水印优先取流、本地转录，再把爆款拆解推送到待创作箱。',
   },
   {
     icon: PenLine,
     title: 'AI 写稿工作台',
-    desc: '管理原始素材与口播稿，支持多文件标签、搜索替换、版本历史、AI 生成与 AI 审稿批注。',
+    desc: '管理 original.md 与 script.md，支持口播模板、版本历史、AI 审稿和一键重新生成。',
   },
   {
     icon: Mic,
@@ -21,18 +21,18 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: 'Motion Card 数据动画',
-    desc: 'AI 生成自由 Remotion TSX 卡片（文字 / 数字 / 表格 / 图表），出卡前先生成逐拍动画指导。',
+    title: 'Motion Card 与逐拍动画',
+    desc: 'AI 生成 Remotion TSX 信息卡，并在出卡前写出动画脚本，让节奏、强调和转场更稳定。',
   },
   {
     icon: Layers,
-    title: '专业时间线编辑',
-    desc: '支持音频、字幕、图片、视频、文字、AI 卡片、多轨道、拖拽吸附、拆分裁剪。',
+    title: '多比例封面工作台',
+    desc: '16:9、4:3、3:4 封面按平台取用，支持缺失比例补全、单独重生和提示词追溯。',
   },
   {
     icon: Brain,
     title: '多 Provider AI 配置',
-    desc: '支持 OpenAI 兼容、Gemini、LM Studio 等 LLM，多种图片 / 视频 Provider 与多音色 TTS。',
+    desc: '新增火山方舟、OpenAI Responses、Claude Code ACP 等 Provider，并支持默认模型和步骤级绑定。',
   },
   {
     icon: Bot,
@@ -45,11 +45,6 @@ const features = [
     desc: 'lingji-editor MCP Server 提供工具给 Claude Code / Codex / Gemini，配合 file-first 契约编辑项目。',
   },
   {
-    icon: Send,
-    title: '多平台一键发布',
-    desc: '多画幅封面工作台、发布元数据与 B站分区 AI 推荐，发布到 B站 / 视频号 / 抖音 / 快手 / 小红书。',
-  },
-  {
     icon: Terminal,
     title: '命令行与自动化',
     desc: '无头 lingji CLI 在终端里驱动音频、字幕分析、卡片、封面、导出等完整流水线。',
@@ -57,12 +52,22 @@ const features = [
   {
     icon: MonitorPlay,
     title: 'Remotion 视频导出',
-    desc: '通过 Remotion 渲染引擎导出 H.264 MP4，支持分辨率、质量配置与导出进度展示。',
+    desc: '构建期预打包 Remotion 合成工程，导出 H.264 MP4，并把长耗时任务接入系统通知。',
+  },
+  {
+    icon: Send,
+    title: '一键多平台发布',
+    desc: '多画幅封面、发布元数据与 B 站分区 AI 推荐，发布到 B 站、视频号、抖音、快手和小红书。',
+  },
+  {
+    icon: History,
+    title: '发布历史与就地重登',
+    desc: '记录最近发布任务，账号失效时可在发布流程中重新登录后继续，不必从头来过。',
   },
   {
     icon: HardDrive,
     title: '本地优先架构',
-    desc: '所有项目文件保存在本地目录，无需云端账号，数据完全属于你自己。',
+    desc: '项目、转录、摘要、配置和 Agent 编辑结果都优先保存在本机目录，数据不被平台锁死。',
   },
 ]
 
@@ -80,9 +85,9 @@ export function Features() {
     <section id="features" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">功能特性</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">1.3 之后，创作链路闭环了</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            从素材到成片，覆盖内容创作全流程的桌面级工具
+            不是堆按钮，而是把选题、写稿、制作、导出、发布这些割裂步骤接成一条线。
           </p>
         </div>
 
@@ -91,7 +96,7 @@ export function Features() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
         >
           {features.map(f => (
             <motion.div
