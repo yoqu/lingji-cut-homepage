@@ -10,6 +10,7 @@ const navLinks = [
   { label: '更新日志', href: '#changelog' },
   { label: '采风插件', href: '#chrome-extension' },
   { label: '安装教程', href: '#installation' },
+  { label: '微信群', href: '#contact' },
 ]
 
 export function Navbar() {
