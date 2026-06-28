@@ -7,6 +7,7 @@ import { DemoVideo } from './components/DemoVideo'
 import { QuickStart } from './components/QuickStart'
 import { Screenshots } from './components/Screenshots'
 import { Changelog } from './components/Changelog'
+import { ChromeExtension } from './components/ChromeExtension'
 import { Installation } from './components/Installation'
 import { FAQ } from './components/FAQ'
 import { TechStack } from './components/TechStack'
@@ -26,6 +27,7 @@ function App() {
       <QuickStart />
       <Screenshots />
       <Changelog />
+      <ChromeExtension />
       <Installation />
       <FAQ />
       <TechStack />
